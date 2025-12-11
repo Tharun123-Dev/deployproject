@@ -88,7 +88,7 @@ DATABASES = {
         'PORT': os.getenv("DB_PORT"),
         'OPTIONS': {
             'autocommit': True,
-            'ssl_ca': os.path.join(BASE_DIR, "ca.pem"),
+            'ssl_ca': os.getenv("PEM_CON"),
         }
     }
 }
